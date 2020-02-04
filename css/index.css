@@ -133,7 +133,33 @@ table {
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
 }
-html {
-  background-color: red;
+header {
+  padding: 100px 0 100px 40%;
+  background: #444444;
+  color: white;
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+}
+header h3 {
+  padding-top: 10px;
+}
+h1 {
+  text-align: center;
+  font-size: 7.2rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+hr {
+  width: 10%;
+}
+h3 {
+  text-align: center;
+  font-size: 3.2rem;
+}
+p {
+  font-size: 1.6rem;
 }
