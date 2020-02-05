@@ -89,6 +89,9 @@ h4, p, a {
 
 h1 {
   font-size: 7.2rem;
+  @media (max-width: 500px) {
+    font-size: 3.6rem;
+  }
 }
 
 hr {
@@ -97,20 +100,32 @@ hr {
 
 h2 {
   font-size: 3.2rem;
+  @media (max-width: 500px) {
+    font-size: 1.6rem;
+  }
 }
 
 h3 {
   font-size: 2.4rem;
+  @media (max-width: 500px) {
+    font-size: 1.2rem;
+  }
 }
 
 h4 {
   font-size: 2.0rem;
   text-align: center;
+  @media (max-width: 500px) {
+    font-size: 1.0rem;
+  }
 }
 
 p {
   font-size: 1.6rem;
   line-height: 150%;
+  @media (max-width: 500px) {
+    font-size: 0.8rem;
+  }
 }
 
 .container {
@@ -118,7 +133,11 @@ p {
   margin: 5% auto 5% auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-
+  @media (max-width: 500px) {
+    width: 100%;
+    margin: 0;
+    box-shadow: 0;
+  }
 }
 
 header {
@@ -126,12 +145,19 @@ header {
   display: flex;
   background: @background-header;
   color: white;
+
+  @media (max-width: 500px) {
+  }
   
   .headshot-container {
     width: 40%;
     background:@background-header;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 500px) {
+      display: none;
+    }
     
     .image-wrapper {
       width: 80%;
@@ -145,8 +171,6 @@ header {
     }
   }
 
-  
-  
   .header-content-box {
     width: 60%;
     margin-top: 6%;
@@ -154,31 +178,53 @@ header {
     justify-content: flex-start;
     align-items: center;
 
+    @media (max-width: 500px) {
+      width: 100%;
+      flex-flow: column-reverse wrap;
+
+      .title-box {
+        padding-bottom: 2%;
+      }
+    }
+
     .header-nav-box {
       width: 100%;
       display: flex;
       justify-content: space-evenly;
+
+      @media (max-width: 500px) {
+        flex-direction: column;
+      }
   
       a {
         display: block;
         width: 20%;
         padding: 2% 5%;
         margin-bottom: 6%;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         text-align: center;
         color: white;
         text-decoration: none;
         border: @border;
         border-radius: 45px;
+
+        @media (max-width: 500px) {
+          width: 100%;
+          padding: 5%;
+          margin: 0;
+          border: none;
+          border-top: @border;
+          border-radius: 0;
+        }
       }
     }
-    
-    h1 {
-      padding-bottom: 1%;
+
+    .title-box {
+      padding-top: 5%;
     }
     
-    h2 {
-      padding-top: 1%;
+    h1, h2 {
+      padding-bottom: 1%;
     }
   }
 }
@@ -187,15 +233,29 @@ header {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+
+  @media (max-width: 500px) {
+    flex-direction: column-reverse;
+    margin-top: 1%;
+  }
   
   .left-column {
     width: 40%;
     padding: 0 4% 4% 4%;
     .flex-column();
     text-align: center;
+
+    @media (max-width: 500px) {
+      width: 100%;
+      padding: 0;
+    }
         
     h2, h3, h4, p, a {
       padding-bottom: 3%;
+
+      @media (max-width: 500px) {
+        padding-bottom: 1%;
+      }
     }
     
     a {
@@ -203,27 +263,53 @@ header {
       font-size: 1.6rem;
       text-decoration: none;
       color: black;
+
+      @media (max-width: 500px) {
+        font-size: 0.8rem;
+      }
     }
     
     .left-box {
       padding: 5% 10% 5%;
       background: @accent;
+
+      @media (max-width: 500px) {
+        padding: 2%;
+      }
       
       h3, h4, p, a {
-        padding-bottom: 5%;  
+        padding-bottom: 5%;
+        
+        @media (max-width: 500px) {
+          padding: 1%;
+        }
       }
 
       h2 {
         text-align: left;
+
+        @media (max-width: 500px) {
+          text-align: center;
+        }
       }
 
       hr {
         width: 100%;
         margin-bottom: 5%;
+
+        @media (max-width: 500px) {
+          width: 95%;
+          margin-bottom: 2%;
+        }
       }
       
       .degree {
         padding-bottom: 5%;
+
+        @media (max-width: 500px) {
+          padding-bottom: 1%;
+        }
+
         h3, h4, p {
           padding-bottom: 1%;
         }
@@ -232,11 +318,19 @@ header {
     
     .contact {
       padding-top: 20%;
+
+      @media (max-width: 500px) {
+        padding-top: 5%;
+      }
     }
     
     .expertise {
       h3 {
         padding-bottom: 10%;
+
+        @media (max-width: 500px) {
+          padding-bottom: 2%;
+        }
       }
     }
   }
@@ -245,6 +339,11 @@ header {
     width: 60%;
     padding: 3% 4% 0 0;
     .flex-column();
+
+    @media (max-width: 500px) {
+      width: 100%;
+      padding: 0;
+    }
     
     h3, h4 {
       padding-bottom: 1%;
@@ -253,6 +352,10 @@ header {
   
   .right-box {
     width: 100%;
+
+    @media (max-width: 500px) {
+      padding: 2%;
+    }
     
     h2 {
       width: 100%;
@@ -262,10 +365,15 @@ header {
 
     p {
       padding: 2% 0;
+
+      @media (max-width: 500px) {
+        // padding: 2%;
+      }
     }
 
     .position {
       padding: 2% 0;
-    }
+      }
+    
   }
 }

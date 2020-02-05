@@ -148,27 +148,59 @@ a {
 h1 {
   font-size: 7.2rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3.6rem;
+  }
+}
 hr {
   width: 10%;
 }
 h2 {
   font-size: 3.2rem;
 }
+@media (max-width: 500px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+}
 h3 {
   font-size: 2.4rem;
+}
+@media (max-width: 500px) {
+  h3 {
+    font-size: 1.2rem;
+  }
 }
 h4 {
   font-size: 2rem;
   text-align: center;
 }
+@media (max-width: 500px) {
+  h4 {
+    font-size: 1rem;
+  }
+}
 p {
   font-size: 1.6rem;
   line-height: 150%;
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 0.8rem;
+  }
 }
 .container {
   width: 90vw;
   margin: 5% auto 5% auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    box-shadow: 0;
+  }
 }
 header {
   width: 100%;
@@ -181,6 +213,11 @@ header .headshot-container {
   background: #444444;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 500px) {
+  header .headshot-container {
+    display: none;
+  }
 }
 header .headshot-container .image-wrapper {
   width: 80%;
@@ -200,33 +237,64 @@ header .header-content-box {
   justify-content: flex-start;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header .header-content-box {
+    width: 100%;
+    flex-flow: column-reverse wrap;
+  }
+  header .header-content-box .title-box {
+    padding-bottom: 2%;
+  }
+}
 header .header-content-box .header-nav-box {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  header .header-content-box .header-nav-box {
+    flex-direction: column;
+  }
 }
 header .header-content-box .header-nav-box a {
   display: block;
   width: 20%;
   padding: 2% 5%;
   margin-bottom: 6%;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   text-align: center;
   color: white;
   text-decoration: none;
   border: 1px solid white;
   border-radius: 45px;
 }
-header .header-content-box h1 {
-  padding-bottom: 1%;
+@media (max-width: 500px) {
+  header .header-content-box .header-nav-box a {
+    width: 100%;
+    padding: 5%;
+    margin: 0;
+    border: none;
+    border-top: 1px solid white;
+    border-radius: 0;
+  }
 }
+header .header-content-box .title-box {
+  padding-top: 5%;
+}
+header .header-content-box h1,
 header .header-content-box h2 {
-  padding-top: 1%;
+  padding-bottom: 1%;
 }
 .content-container {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
+}
+@media (max-width: 500px) {
+  .content-container {
+    flex-direction: column-reverse;
+    margin-top: 1%;
+  }
 }
 .content-container .left-column {
   width: 40%;
@@ -235,6 +303,12 @@ header .header-content-box h2 {
   flex-direction: column;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .content-container .left-column {
+    width: 100%;
+    padding: 0;
+  }
+}
 .content-container .left-column h2,
 .content-container .left-column h3,
 .content-container .left-column h4,
@@ -242,15 +316,34 @@ header .header-content-box h2 {
 .content-container .left-column a {
   padding-bottom: 3%;
 }
+@media (max-width: 500px) {
+  .content-container .left-column h2,
+  .content-container .left-column h3,
+  .content-container .left-column h4,
+  .content-container .left-column p,
+  .content-container .left-column a {
+    padding-bottom: 1%;
+  }
+}
 .content-container .left-column a {
   display: block;
   font-size: 1.6rem;
   text-decoration: none;
   color: black;
 }
+@media (max-width: 500px) {
+  .content-container .left-column a {
+    font-size: 0.8rem;
+  }
+}
 .content-container .left-column .left-box {
   padding: 5% 10% 5%;
   background: #EFF3F6;
+}
+@media (max-width: 500px) {
+  .content-container .left-column .left-box {
+    padding: 2%;
+  }
 }
 .content-container .left-column .left-box h3,
 .content-container .left-column .left-box h4,
@@ -258,15 +351,39 @@ header .header-content-box h2 {
 .content-container .left-column .left-box a {
   padding-bottom: 5%;
 }
+@media (max-width: 500px) {
+  .content-container .left-column .left-box h3,
+  .content-container .left-column .left-box h4,
+  .content-container .left-column .left-box p,
+  .content-container .left-column .left-box a {
+    padding: 1%;
+  }
+}
 .content-container .left-column .left-box h2 {
   text-align: left;
+}
+@media (max-width: 500px) {
+  .content-container .left-column .left-box h2 {
+    text-align: center;
+  }
 }
 .content-container .left-column .left-box hr {
   width: 100%;
   margin-bottom: 5%;
 }
+@media (max-width: 500px) {
+  .content-container .left-column .left-box hr {
+    width: 95%;
+    margin-bottom: 2%;
+  }
+}
 .content-container .left-column .left-box .degree {
   padding-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .content-container .left-column .left-box .degree {
+    padding-bottom: 1%;
+  }
 }
 .content-container .left-column .left-box .degree h3,
 .content-container .left-column .left-box .degree h4,
@@ -276,14 +393,30 @@ header .header-content-box h2 {
 .content-container .left-column .contact {
   padding-top: 20%;
 }
+@media (max-width: 500px) {
+  .content-container .left-column .contact {
+    padding-top: 5%;
+  }
+}
 .content-container .left-column .expertise h3 {
   padding-bottom: 10%;
+}
+@media (max-width: 500px) {
+  .content-container .left-column .expertise h3 {
+    padding-bottom: 2%;
+  }
 }
 .content-container .right-column {
   width: 60%;
   padding: 3% 4% 0 0;
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .content-container .right-column {
+    width: 100%;
+    padding: 0;
+  }
 }
 .content-container .right-column h3,
 .content-container .right-column h4 {
@@ -292,6 +425,11 @@ header .header-content-box h2 {
 .content-container .right-box {
   width: 100%;
 }
+@media (max-width: 500px) {
+  .content-container .right-box {
+    padding: 2%;
+  }
+}
 .content-container .right-box h2 {
   width: 100%;
   padding: 1% 0 1% 0;
@@ -299,6 +437,8 @@ header .header-content-box h2 {
 }
 .content-container .right-box p {
   padding: 2% 0;
+}
+@media (max-width: 500px) {
 }
 .content-container .right-box .position {
   padding: 2% 0;
