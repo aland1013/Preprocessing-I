@@ -155,6 +155,10 @@ header {
     background:@background-header;
     display: flex;
     justify-content: center;
+
+    @media (@mobile) {
+      display: none;
+    }
     
     .image-wrapper {
       width: 80%;

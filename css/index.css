@@ -214,6 +214,11 @@ header .headshot-container {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 500px) {
+  header .headshot-container {
+    display: none;
+  }
+}
 header .headshot-container .image-wrapper {
   width: 80%;
   margin-top: 10%;
