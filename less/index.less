@@ -50,13 +50,14 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 // Variables
 @border: 1px solid white;
 @background-header: #444444;
 @accent: #EFF3F6;
+@mobile: ~"max-width: 500px";
 
 // Mixins
 .bold-center() {
@@ -89,7 +90,7 @@ h4, p, a {
 
 h1 {
   font-size: 7.2rem;
-  @media (max-width: 500px) {
+  @media (@mobile) {
     font-size: 3.6rem;
   }
 }
@@ -100,14 +101,14 @@ hr {
 
 h2 {
   font-size: 3.2rem;
-  @media (max-width: 500px) {
+  @media (@mobile) {
     font-size: 1.6rem;
   }
 }
 
 h3 {
   font-size: 2.4rem;
-  @media (max-width: 500px) {
+  @media (@mobile) {
     font-size: 1.2rem;
   }
 }
@@ -115,7 +116,7 @@ h3 {
 h4 {
   font-size: 2.0rem;
   text-align: center;
-  @media (max-width: 500px) {
+  @media (@mobile) {
     font-size: 1.0rem;
   }
 }
@@ -123,8 +124,8 @@ h4 {
 p {
   font-size: 1.6rem;
   line-height: 150%;
-  @media (max-width: 500px) {
-    font-size: 0.8rem;
+  @media (@mobile) {
+    font-size: 1rem;
   }
 }
 
@@ -133,7 +134,7 @@ p {
   margin: 5% auto 5% auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-  @media (max-width: 500px) {
+  @media (@mobile) {
     width: 100%;
     margin: 0;
     box-shadow: 0;
@@ -146,7 +147,7 @@ header {
   background: @background-header;
   color: white;
 
-  @media (max-width: 500px) {
+  @media (@mobile) {
   }
   
   .headshot-container {
@@ -154,10 +155,6 @@ header {
     background:@background-header;
     display: flex;
     justify-content: center;
-
-    @media (max-width: 500px) {
-      display: none;
-    }
     
     .image-wrapper {
       width: 80%;
@@ -178,7 +175,7 @@ header {
     justify-content: flex-start;
     align-items: center;
 
-    @media (max-width: 500px) {
+    @media (@mobile) {
       width: 100%;
       flex-flow: column-reverse wrap;
 
@@ -192,7 +189,7 @@ header {
       display: flex;
       justify-content: space-evenly;
 
-      @media (max-width: 500px) {
+      @media (@mobile) {
         flex-direction: column;
       }
   
@@ -208,7 +205,7 @@ header {
         border: @border;
         border-radius: 45px;
 
-        @media (max-width: 500px) {
+        @media (@mobile) {
           width: 100%;
           padding: 5%;
           margin: 0;
@@ -234,7 +231,7 @@ header {
   display: flex;
   flex-flow: row wrap;
 
-  @media (max-width: 500px) {
+  @media (@mobile) {
     flex-direction: column-reverse;
     margin-top: 1%;
   }
@@ -245,7 +242,7 @@ header {
     .flex-column();
     text-align: center;
 
-    @media (max-width: 500px) {
+    @media (@mobile) {
       width: 100%;
       padding: 0;
     }
@@ -253,7 +250,7 @@ header {
     h2, h3, h4, p, a {
       padding-bottom: 3%;
 
-      @media (max-width: 500px) {
+      @media (@mobile) {
         padding-bottom: 1%;
       }
     }
@@ -261,10 +258,9 @@ header {
     a {
       display: block;
       font-size: 1.6rem;
-      text-decoration: none;
       color: black;
 
-      @media (max-width: 500px) {
+      @media (@mobile) {
         font-size: 0.8rem;
       }
     }
@@ -273,14 +269,14 @@ header {
       padding: 5% 10% 5%;
       background: @accent;
 
-      @media (max-width: 500px) {
+      @media (@mobile) {
         padding: 2%;
       }
       
       h3, h4, p, a {
         padding-bottom: 5%;
         
-        @media (max-width: 500px) {
+        @media (@mobile) {
           padding: 1%;
         }
       }
@@ -288,7 +284,7 @@ header {
       h2 {
         text-align: left;
 
-        @media (max-width: 500px) {
+        @media (@mobile) {
           text-align: center;
         }
       }
@@ -297,7 +293,7 @@ header {
         width: 100%;
         margin-bottom: 5%;
 
-        @media (max-width: 500px) {
+        @media (@mobile) {
           width: 95%;
           margin-bottom: 2%;
         }
@@ -306,7 +302,7 @@ header {
       .degree {
         padding-bottom: 5%;
 
-        @media (max-width: 500px) {
+        @media (@mobile) {
           padding-bottom: 1%;
         }
 
@@ -319,7 +315,7 @@ header {
     .contact {
       padding-top: 20%;
 
-      @media (max-width: 500px) {
+      @media (@mobile) {
         padding-top: 5%;
       }
     }
@@ -328,7 +324,7 @@ header {
       h3 {
         padding-bottom: 10%;
 
-        @media (max-width: 500px) {
+        @media (@mobile) {
           padding-bottom: 2%;
         }
       }
@@ -340,7 +336,7 @@ header {
     padding: 3% 4% 0 0;
     .flex-column();
 
-    @media (max-width: 500px) {
+    @media (@mobile) {
       width: 100%;
       padding: 0;
     }
@@ -353,7 +349,7 @@ header {
   .right-box {
     width: 100%;
 
-    @media (max-width: 500px) {
+    @media (@mobile) {
       padding: 2%;
     }
     
@@ -365,15 +361,10 @@ header {
 
     p {
       padding: 2% 0;
-
-      @media (max-width: 500px) {
-        // padding: 2%;
-      }
     }
 
     .position {
       padding: 2% 0;
-      }
-    
+    }
   }
 }

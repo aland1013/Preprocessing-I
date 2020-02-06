@@ -187,7 +187,7 @@ p {
 }
 @media (max-width: 500px) {
   p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 .container {
@@ -213,11 +213,6 @@ header .headshot-container {
   background: #444444;
   display: flex;
   justify-content: center;
-}
-@media (max-width: 500px) {
-  header .headshot-container {
-    display: none;
-  }
 }
 header .headshot-container .image-wrapper {
   width: 80%;
@@ -328,7 +323,6 @@ header .header-content-box h2 {
 .content-container .left-column a {
   display: block;
   font-size: 1.6rem;
-  text-decoration: none;
   color: black;
 }
 @media (max-width: 500px) {
@@ -437,8 +431,6 @@ header .header-content-box h2 {
 }
 .content-container .right-box p {
   padding: 2% 0;
-}
-@media (max-width: 500px) {
 }
 .content-container .right-box .position {
   padding: 2% 0;
