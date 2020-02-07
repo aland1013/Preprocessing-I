@@ -3,10 +3,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>My Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +16,101 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header>
+      <div class="headshot-container">
+        <div class="image-wrapper">
+          <img src="images/peter_gibbons.jpg" alt="">  
+        </div>
+      </div>
+
+      <div class="header-content-box">
+        <nav class="header-nav-box">
+          <a href="#profile">PROFILE</a>
+          <a href="#experience">EXPERIENCE</a>
+          <a href="#education">EDUCATION</a>
+          <a href="#skills">SKILLS</a>
+        </nav>
+
+        <div class="title-box">
+          <h1>PETER GIBBONS</h1>
+          <hr>
+          <h2>SOFTWARE ENGINEER</h2>
+        </div>
+      </div>
+    </header>
+
+    <section class="content-container">
+      <div class="left-column">
+        <div class="left-box contact">
+          <h2>CONTACT</h2>
+          <hr>
+          <p>555-555-5555</p>
+          <a href="#">petergibbons@initech.com</a>
+          <p>622 Stone Canyon Dr.<br>
+          Irving, Texas 75063</p>
+          <a href="#">www.petergibbons.dev</a>
+        </div>
+
+        <div id="education" class="left-box education">
+          <h2>EDUCATION</h2>
+          <hr>
+          <div class="degree">
+            <h3>M.S., Computer Science</h3>
+            <h4>Texas Tech University</h4>
+            <p>1994-1995</p>  
+          </div>
+
+          <div class="degree">
+            <h3>B.S., Computer Science</h3>
+            <h4>University of Texas</h4>
+            <p>1990-1994</p>
+          </div>
+        </div>
+
+        <div id="skills" class="left-box expertise">
+          <h2>EXPERTISE</h2>
+          <hr>
+          <h3>TPS Reports</h3>
+          <h3>Critical Thinking</h3>
+          <h3>Judgment and Decision Making</h3>
+          <h3>Development and Building Teams</h3>
+          <h3>Time Management</h3>
+          <h3>Active Listening</h3>
+          <h3>Reading Comprehension</h3>
+        </div>
+      </div>
+      
+      <div class="right-column">
+        <div id="profile" class="right-box">
+          <h2>PROFILE</h2>
+          <p>So I was sitting in my cubicle today, and I realized, ever since I started working, every single day of my life has been worse than the day before it. So that means that every single day that you see me, that's on the worst day of my life.<br>
+          <br>It's not just about me and my dream of doing nothing. It's about all of us. I don't know what happened to me at that hypnotherapist and, I don't know, maybe it was just shock and it's wearing off now, but when I saw that fat man keel over and die - Michael, we don't have a lot of time on this earth! We weren't meant to spend it this way. Human beings were not meant to sit in little cubicles staring at computer screens all day, filling out useless forms and listening to eight different bosses drone on about about mission statements.</p>
+        </div>
+
+        <div id="experience" class="right-box">
+          <h2>WORK EXPERIENCE</h2>
+          <div class="position">
+            <h3>Initech, Inc.</h3>
+            <h4>Software Engineer | 1995-2000</h4>
+            <p>Well see, they wrote all this bank software, and, uh, to save space, they used two digits for the date instead of four. So, like, 98 instead of 1998? Uh, so I go through these thousands of lines of code and, uh... it doesn't really matter. I uh, I don't like my job, and, uh, I don't think I'm gonna go anymore.<br>
+            <br>Yeah, I just stare at my desk; but it looks like I'm working. I do that for probably another hour after lunch, too. I'd say in a given week I probably only do about fifteen minutes of real, actual, work.</p>
+          </div>
+
+          <div class="position">
+            <h3>Dell Inc.</h3>
+            <h4>Intern | Summer 1994</h4>
+            <p>Helped design personal computers, servers, data storage devices, network switches, software, computer peripherals, HDTVs, cameras, printers, MP3 players, and other electronics. Developed innovations in supply chain management and electronic commerce, particularly its direct-sales model and its "build-to-order" approach to manufacturing—delivering individual PCs configured to customer specifications. Advocated for the company's entry into the market for IT services. The company has since made additional acquisitions in storage and networking systems, with the aim of expanding their portfolio from offering computers only to delivering complete solutions for enterprise customers.</p>
+          </div>
+
+          <div class="position">
+            <h3>Blockbuster Video</h3>
+            <h4>Store Manager | 1990-1994</h4>
+            <p>In this job I was the manager. I had to open the store and close it. I didn't have to stay all day but I had to be there when the store was more busy (most of the time, 3 hours before the store was closed). I had to make most of the decisions to guarantee to our customers our services. I was also in charge of the employees.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
