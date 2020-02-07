@@ -237,6 +237,9 @@ header .header-content-box {
   justify-content: flex-start;
   align-items: center;
 }
+header .header-content-box hr {
+  margin-bottom: 3%;
+}
 @media (max-width: 500px) {
   header .header-content-box {
     width: 100%;
@@ -260,7 +263,7 @@ header .header-content-box .header-nav-box a {
   display: block;
   width: 20%;
   padding: 2% 5%;
-  margin-bottom: 6%;
+  margin-bottom: 5%;
   font-size: 1.2rem;
   text-align: center;
   color: white;
